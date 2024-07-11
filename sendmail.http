@@ -1,7 +1,34 @@
-POST http://localhost/api/v1/endpoint-webservice/
+### Prueba de envio de correo en la que si que manda el correo
+POST http://localhost/api-sendmail/v1/endpoint-webservice/
 
 {
     "name": "Daniel",
     "email": "tandem.danielvdm@gmail.com",
     "message": "Hola"
 }
+
+### Prueba de envio de correo con algun dato faltante
+POST http://localhost/api-sendmail/v1/endpoint-webservice/
+
+{
+    "email": "tandem.danielvdm@gmail.com",
+    "message": "Hola"
+}
+# Da error por la falta de dato 
+###Prueba de envio de correo con otro email
+POST http://localhost/api-sendmail/v1/endpoint-webservice/
+
+{
+    "name": "Daniel",
+    "email": "danielvdm@gmail.com",
+    "message": "Hola"
+}
+# Da error en por la equivocacion del email
+
+
+### Prueba de envio con todos los datos faltantes 
+POST http://localhost/api-sendmail/v1/endpoint-webservice/
+
+{
+}
+# Muestra error 
