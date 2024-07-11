@@ -1,0 +1,7 @@
+POST http://localhost/api/v1/endpoint-webservice/
+
+{
+    "name": "Daniel",
+    "email": "tandem.danielvdm@gmail.com",
+    "message": "Hola"
+}
